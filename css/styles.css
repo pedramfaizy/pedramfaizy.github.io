@@ -1,0 +1,652 @@
+
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../resource-main/fonts/Cinzel-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @font-face {
+    font-family: 'CinzelDecorative';
+    src: url('../resource-main/fonts/CinzelDecorative-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'QuickSand';
+    src: url('../resource-main/fonts/Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'QuickSandSemiBold';
+    src: url('../resource-main/fonts/Quicksand-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* @font-face {
+    font-family: 'QuickSandBold';
+    src: url('../resource-main/fonts/Quicksand-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+
+
+
+/* ──────────────── Dark theme (Default) ─────────────────── */
+:root {
+     --general-background: rgb(26, 32, 43); /* #1a202b */
+    --general-text: rgb(245, 245, 245); /* #f5f5f5 */
+
+    --header-background: rgb(0, 0, 0, 0);
+    --header-background-scolled: rgb(26, 32, 43, 1);
+    --header-border-bottom: rgb(245, 245, 245, 0.1);
+    --header-title-logo: rgb(245, 245, 245);
+    --header-title-logo-hover: rgb(93, 138, 168);
+    --header-navlink: rgb(245, 245, 245);
+    --header-navlink-hover: rgb(93, 138, 168);
+    --header-navlink-hover-muted: rgb(25, 122, 187);
+
+    --hero-title: rgb(245, 245, 245);
+    --hero-subtitle: rgb(245, 245, 245);
+    --hero-button-background: rgb(93, 138, 168);
+    --hero-button-text: rgb(26, 32, 43);
+
+
+  
+
+    --card: rgb(26, 32, 43);
+    --card-title: rgb(245, 245, 245);
+    --card-text: rgb(245, 245, 245);
+    --card-shadow: rgb(245, 245, 245, 0);
+    --card-hover: rgb(26, 32, 43);
+    --card-hover-shadow: rgb(245, 245, 245, 0);
+    /* --card-image-shadow: rgb(245, 245, 245, 0); */
+    --card-image-border: rgb(52, 58, 71);
+
+
+
+    --footer-background: rgb(26, 32, 43);
+    --footer-text: rgb(245, 245, 245);
+    --footer-border-top: rgb(245, 245, 245, 0.1);
+
+    --selection-background: rgba(195, 176, 145, 0.5);
+    --selection-text: rgb(0, 0, 0);
+}
+
+/* ──────────────── Light theme ──────────────────────── */
+/* :root.light {
+    
+} */
+
+
+
+
+
+
+
+/* ------ Color Palette ------ */
+/* 
+color: rgb(219, 208, 189); Bone
+color: rgb(195, 176, 145); Khaki Beige
+color: rgb(168, 141, 97); Camel
+color: rgb(26, 32, 43); Shadow Gray
+color: rgb(93, 138, 168); Air Force Blue
+*/
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* scrollbar-width: thin;
+    scrollbar-color: #4e4e4e #f1f1f1; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--general-background);
+    color: var(--general-text);
+}
+
+p {
+    font-family: 'QuickSand';
+    font-size: 1.2rem;
+}
+
+::selection {
+    background-color: var(--selection-background);
+    color: var(--selection-text);
+}
+
+
+
+
+
+
+
+/* ===================== HEADER ===================== */
+header {
+    position: sticky;           /* Stays on top while scrolling (While still occupying space on top) */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   /* Creates 3 sections naturally */
+    
+    padding: 20px 40px;
+    background-color: transparent;    /* Starts transparent */
+    transition: background-color 0.4s ease;  /* Smooth change */
+    border-bottom: 1px solid transparent;
+}
+
+.page-home header {
+    position: fixed;           /* Stays on top while scrolling */
+}
+
+header.scrolled {
+    background-color: var(--header-background-scolled);  /* Dark color when scrolled */
+    border-bottom: 1px solid var(--header-border-bottom);
+}
+
+/* Left side - Logo */
+.header-left h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.header-left a {
+    color: var(--header-title-logo);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header-left a:hover{
+    color: var(--header-title-logo-hover);
+}
+
+/* Center - Nav */
+.main-nav {
+    display: flex;
+    gap: 30px;                    /* Space between links */
+}
+
+.nav-link {
+    color: var(--header-navlink);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--header-navlink-hover);  /* hover color */
+}
+
+#active-page-nav {
+    color: var(--header-navlink-hover);  /* active page being hover color */
+}
+
+#active-page-nav:hover {
+    color: var(--header-navlink-hover-muted);  /* active page hover color */
+}
+
+/* Right side - Social Icons */
+.header-right {
+    display: flex;
+    gap: 20px;
+}
+
+.social-link {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+}
+
+/* ===================== HOME PAGE HERO ===================== */
+.hero {
+    height: 100vh;                /* Full screen height */
+    background-image:
+        /* linear-gradient(to bottom, 
+            rgba(191, 108, 108, 0.1) 50%,
+            rgb(32, 56, 209, 0) 100%,
+        ) */
+        url('../resource-main/images/farhad-sanandaji-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay for text readability */
+}
+
+.hero-content {
+    position: relative;   /* So text appears above overlay */
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.hero-title {
+    /* margin-top: 200px; */
+    font-family: 'Cinzel', serif;
+    font-size: 4.5rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: var(--hero-title);
+    text-shadow: 
+        0px 0px 10px rgba(0, 0, 0, 1.0),
+        0px 0px 20px rgba(0, 0, 0, 0.50),
+        0px 0px 40px rgba(0, 0, 0, 0.25);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: var(--hero-subtitle);
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: var(--hero-button-background);
+    color: var(--hero-button-text);
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* ===================== HOME PAGE CONTENT SECTION ===================== */
+.content-section {
+    /* border: solid blue; */
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 80px 40px;
+    min-height: 60vh;
+}
+
+.content-section h2 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.8rem;
+}
+
+.placeholder-grid {
+    /* border: solid blue; */
+
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.placeholder-card {
+    background: var(--header-navlink-hover);
+    border: 1px solid #ddd;
+    padding: 40px 20px;
+    width: 280px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===================== HOME PAGE ABOUT SECTION ===================== */
+
+.about-section {
+    /* border: solid red; */
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+
+    gap: 50px;
+
+}
+
+.about-section h2 {
+    font-family: 'Cinzel', serif;
+    font-weight: 200;
+    line-height: 1.8em;
+}
+
+.about-section h3 {
+    font-family: 'QuickSand', serif;
+    font-weight: 200;
+}
+
+.about-section h4 {
+    font-family: 'QuickSandSemiBold', serif;
+    font-size: 1.5rem;
+}
+
+.about-section a {
+    font-family: 'QuickSandSemiBold', serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--header-navlink-hover-muted);
+    transition: color 0.3s;
+}
+
+.about-section a:hover {
+    color: var(--header-navlink-hover);
+}
+
+.about-section-left {
+    /* border: solid red; */
+
+    max-width: 700px;
+
+
+    text-align: left;
+    max-width: 600px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.about-section-right {
+    /* border: solid red; */
+
+    text-align: left;
+    max-width: 550px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+/* ===================== HOME PAGE CONTACT SECTION ===================== */
+
+.contact-section {
+    /* border: solid green; */
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+
+    gap: 50px;
+
+}
+
+.contact-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.7rem;
+    line-height: 1.5em;
+    font-weight: 200;
+}
+
+.contact-section h3 {
+    font-family: 'QuickSand', serif;
+    font-size: 2rem;
+    line-height: 2em;
+    font-weight: 200;
+}
+
+.contact-section h4 {
+    font-family: 'QuickSandSemiBold', serif;
+    font-size: 1.5rem;
+}
+
+.contact-section a {
+    font-family: 'QuickSandSemiBold', serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--header-navlink-hover-muted);
+    transition: color 0.3s;
+}
+
+.contact-section a:hover {
+    color: var(--header-navlink-hover);
+}
+
+.contact-section-left {
+    /* border: solid green; */
+
+    max-width: 700px;
+
+
+    text-align: left;
+    max-width: 600px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-size: 2rem;
+}
+
+.contact-section-right {
+    /* border: solid green; */
+
+    max-width: 550px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+
+.contact-section-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ===================== HOME PAGE IMAGE SECTION ===================== */
+
+.image-section {
+    height: 40vh;                /* Full screen height */
+    background-image: url('../resource-main/images/Diwan Image section BW.png'); /* Replace with your Kurdish music image later */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.image-section-title {
+    /* margin-top: 200px; */
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
+    
+    mix-blend-mode: overlay;
+    color: var(--hero-title);
+    text-shadow: 
+        0px 0px 10px rgba(0, 0, 0, 1.0),
+        0px 0px 20px rgba(0, 0, 0, 0.50),
+        0px 0px 40px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== ARCHIVE PAGE GRID ===================== */
+
+
+
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 2rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px var(--card-shadow);
+    transition: all 0.25s, box-shadow 0.2s;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.card:hover {
+    background: var(--card-hover);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px var(--card-hover-shadow);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    /* box-shadow: 0 0 12px var(--card-image-shadow); */
+    border: 2px solid var(--card-image-border);      /* White border around circle */
+
+}
+
+.card h3 {
+    margin: 10px 0 6px 0;
+    font-size: 1.25rem;
+    color: var(--card-title);
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin: 0;
+    color: var(--card-text);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== FOOTER ===================== */
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid var(--footer-border-top);
+    background-color: var(--footer-background);
+    color: var(--footer-text);
+}

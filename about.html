@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awazxane - Kurdish Music Archive</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="page-about">
+
+
+    <header id="main-header">
+        <!-- Left: Logo -->
+        <div class="header-left">
+            <h1><a href="./index.html">AWAZXANE</a></h1>
+        </div>
+
+        <!-- Center: Navigation -->
+        <nav class="main-nav">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./archive.html" class="nav-link">Archive</a>
+            <a href="./about.html" class="nav-link" id="active-page-nav">About</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Right: Social Icons -->
+        <div class="header-right">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">📺</a>
+            <a href="#" class="social-link" aria-label="X (Twitter)">𝕏</a>
+            <a href="#" class="social-link" aria-label="GitHub">🐙</a>
+        </div>
+    </header>
+
+
+    <section id="about" class="about-section">
+
+        <div class="about-section-left">
+            <h4>Introduction and Description</h4>
+            <h2>Discover Awazxane: <br> Preserving Kurdish musical heritage</h2>
+        </div>
+
+        <div class="about-section-right">
+            <p>
+                <br>
+                Awazxane is a dedicated digital archive for preserving and sharing Kurdish music and neighboring cultural traditions.
+                As a comprehensive note-sheet bank, it serves artists, educators, students, and researchers with easy access to authentic compositions and folk melodies.
+                <br><br>
+                Dive into a world of musical treasures, where traditional vocal and instrumental works are meticulously documented for exploration.
+                <br><br>
+            </p>
+            <a href="/about.html">Read More →</a>
+                
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>&copy; 2026 Awazxane &middot; Kurdish sheet music archive</p>
+    </footer>
+
+
+
+    <script>
+        // Simple JavaScript for header scroll effect
+        const header = document.getElementById('main-header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {  // Change after scrolling 100px
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awazxane - Artist</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-artist">
+
+    
+    <header id="main-header">
+        <!-- Left: Logo -->
+        <div class="header-left">
+            <h1><a href="./index.html">AWAZXANE</a></h1>
+        </div>
+
+        <!-- Center: Navigation -->
+        <nav class="main-nav">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./archive.html" class="nav-link">Archive</a>
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Right: Social Icons -->
+        <div class="header-right">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">📺</a>
+            <a href="#" class="social-link" aria-label="X (Twitter)">𝕏</a>
+            <a href="#" class="social-link" aria-label="GitHub">🐙</a>
+        </div>
+    </header>
+
+
+    <main style="max-width: 900px; margin: 3rem auto; padding: 0 5%;">
+        <div id="artist-content">
+            <!-- JavaScript will replace this content with the artist's info -->
+        </div>
+    </main>
+
+    
+    <script src="js/main.js"></script>
+    <script>
+        async function loadArtist() {
+            // Step 1: Get the artist ID from the URL
+            const params = new URLSearchParams(window.location.search);
+            const artistId = params.get('id');   // e.g. "a26" from ?id=a26
+
+            if (!artistId) {
+                document.getElementById('artist-content').innerHTML = '<h2>Artist not found</h2>';
+                return;
+            }
+
+            // Step 2: Load all artists from JSON
+            const response = await fetch('data/artists.json');
+            const artists = await response.json();
+            
+            // Step 3: Find the specific artist by ID
+            const artist = artists.find(a => a.id === artistId);
+            
+            if (!artist) {
+                document.getElementById('artist-content').innerHTML = '<h2>Artist not found</h2>';
+                return;
+            }
+
+            // Step 4: Build the HTML for this artist
+            document.getElementById('artist-content').innerHTML = `
+                <img src="${artist.photo_url}" 
+                    style="width:100%; max-height:500px; object-fit:cover; border-radius:12px;" 
+                    alt="${artist.name}">
+
+                <h1 style="margin:1.5rem 0;">${artist.name}</h1>
+                
+                <p><strong>Region:</strong> ${artist.region || 'Unknown'}</p>
+                <p><strong>Genre:</strong> ${artist.genre || 'Unspecified'}</p>
+                
+                ${artist.bio ? `<p style="margin-top:2rem; font-size:1.1rem; line-height:1.7;">${artist.bio}</p>` : ''}
+                
+                <h3 style="margin-top:3rem;">Pieces by ${artist.name}</h3>
+                <div id="pieces-by-artist" class="grid"></div>
+            `;
+
+            // TODO: Later we will load the actual pieces here
+        }
+
+        // Run the function when the page loads
+        loadArtist();
+    </script>
+
+
+    <footer>
+        <p>&copy; 2026 Pêdram Feyzî — Awazxane &middot; Kurdish sheet music archive</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awazxane - Kurdish Music Archive</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="page-home">
+
+
+    <header id="main-header">
+        <!-- Left: Logo -->
+        <div class="header-left">
+            <h1><a href="./index.html">AWAZXANE</a></h1>
+        </div>
+
+        <!-- Center: Navigation -->
+        <nav class="main-nav">
+            <a href="./index.html" class="nav-link" id="active-page-nav">Home</a>
+            <a href="./archive.html" class="nav-link">Archive</a>
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Right: Social Icons -->
+        <div class="header-right">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">📺</a>
+            <a href="#" class="social-link" aria-label="X (Twitter)">𝕏</a>
+            <a href="#" class="social-link" aria-label="GitHub">🐙</a>
+        </div>
+    </header>
+
+
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Discover the voice of <br> Kurdistan</h2>
+            <!-- <p class="hero-subtitle">A beautiful archive of Kurdish sheet music and traditional melodies</p> -->
+            <a href="./archive.html" class="hero-button">Explore</a>
+        </div>
+    </section>
+
+
+
+    <section id="archive" class="content-section">
+        <div class="content-section-text">
+            <h2>Our Archive</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="placeholder-grid">
+            <!-- You can add cards here later -->
+            <div class="placeholder-card">Artist Card 1</div>
+            <div class="placeholder-card">Piece Card 2</div>
+            <div class="placeholder-card">Notation Example</div>
+        </div>
+    </section>
+
+
+
+    <section id="about" class="about-section">
+
+        <div class="about-section-left">
+            <h4>Introduction and Description <br><br> </h4>
+            <h2>Discover Awazxane: <br> </h2>
+            <h3>Preserving Kurdish musical heritage</h3>
+        </div>
+
+        <div class="about-section-right">
+            <p>
+                Awazxane is a dedicated digital archive for preserving and sharing Kurdish music and neighboring cultural traditions.
+                As a comprehensive note-sheet bank, it serves artists, educators, students, and researchers with easy access to authentic compositions and folk melodies.
+                <br><br>
+                Dive into a world of musical treasures, where traditional vocal and instrumental works are meticulously documented for exploration.
+                <br><br>
+            </p>
+            <a href="/about.html">Read More →</a>
+                
+        </div>
+
+    </section>
+
+
+
+    <section class="image-section">
+
+        <div class="image-section-title">
+            <h1>Preserved by the People <br> for the People</h1>
+        </div>
+
+    </section>
+
+
+
+    <section id="contact" class="contact-section">
+
+        <div class="contact-section-left">
+            <h4>Invitation and Overview <br><br> </h4>
+            <h2>Contribute to Awazxane: <br> </h2>
+            <h3>Share your musical contributions</h3>
+            <p>
+                Awazxane invites musicians, composers, and enthusiasts to contribute to our archive by submitting personal notations of Kurdish compositions or folk melodies from related traditions.
+                <br><br>
+                This collaborative space encourages community-driven growth, allowing shared works to inspire both preservation and innovation. By connecting contributions with a global audience dedicated to cultural heritage, we aim to foster a rich exchange of ideas and creativity.
+            </p>
+            <a href="/contact.html">Submit your contributions →</a>
+        </div>
+
+
+        <div class="contact-section-right">
+            <img src="./resource-main/images/DecoNotationWhite.png" alt="Notation Image">
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2026 Awazxane &middot; Kurdish sheet music archive</p>
+    </footer>
+
+
+
+    <script>
+        // Simple JavaScript for header scroll effect
+        const header = document.getElementById('main-header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {  // Change after scrolling 100px
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #1b1e20;
+
+
+    display: flex;
+
+
+
+    min-height: 200vh;
+
+
+
+}
+
+
+
+
+
+
+
+header {
+    background: #1a202b;
+    color: white;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+      
+    z-index: 100;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+
+    overflow: hidden;
+    flex-wrap: nowrap;
+
+    border:  solid blue;
+
+}
+
+.header-title-logo {
+    border: solid fuchsia;
+    h1 a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.8rem;
+    
+    }
+}
+
+
+.main-nav-bar {
+    border: solid firebrick;
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin: 1rem;
+        font-weight: 500;
+    }
+
+    a:hover {
+        color: #a8dadc;
+    }
+}
+
+.header-socials-icons {
+    border: solid magenta;
+    overflow: hidden;
+
+    a {
+        color: white;
+        text-decoration: none;
+        margin: 0.25rem;
+        font-weight: 500;
+
+    }
+
+    a:hover {
+        color: #a8dadc;
+    }
+}
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* header {
+    background: #1a202b;
+    color: white;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #a8dadc;
+} */
+

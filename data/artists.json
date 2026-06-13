@@ -1,0 +1,446 @@
+[
+  {
+    "id": "a1",
+    "name": "Ayla K.",
+    "region": "Kurdistan",
+    "genre": "Traditional Folk",
+    "bio": "Traditional Kurdish performer known for preserving ancient folk melodies passed down through generations in the Zagros mountains.",
+    "photo_url": "assets/artists/ayla_k.svg",
+    "links": [],
+    "piece_ids": ["p1", "p4"]
+  },
+  {
+    "id": "a2",
+    "name": "Bahar D.",
+    "region": "Kurdistan",
+    "genre": "Contemporary Folk",
+    "bio": "Contemporary Kurdish artist blending traditional motifs with modern arrangements. Active in the Dohuk cultural scene.",
+    "photo_url": "assets/artists/bahar_d.svg",
+    "links": ["a1"],
+    "piece_ids": ["p2", "p3", "p5"]
+  },
+  {
+    "id": "a3",
+    "name": "Chnar M.",
+    "region": "Kurdistan",
+    "genre": "Classical Kurdish",
+    "bio": "A virtuoso santoor player from Sulaymaniyah, Chnar has revived many classical Kurdish compositions for solo instrument.",
+    "photo_url": "assets/artists/chnar_m.svg",
+    "links": [],
+    "piece_ids": ["p6", "p7"]
+  },
+  {
+    "id": "a4",
+    "name": "Delal R.",
+    "region": "Kurdistan",
+    "genre": "Fusion / World",
+    "bio": "Kurdish vocalist and composer who fuses traditional Kurdish music with jazz and electronic elements.",
+    "photo_url": "assets/artists/delal_r.svg",
+    "links": ["a2"],
+    "piece_ids": ["p8"]
+  },
+  {
+    "id": "a5",
+    "name": "Farhad S.",
+    "region": "Iran",
+    "genre": "Persian Classical",
+    "bio": "Master of Persian classical radif and a celebrated tar player from Tehran. Has performed internationally for over three decades.",
+    "photo_url": "assets/artists/farhad_s.svg",
+    "links": [],
+    "piece_ids": ["p9", "p10"]
+  },
+  {
+    "id": "a6",
+    "name": "Gohar T.",
+    "region": "Armenia",
+    "genre": "Armenian Sacred",
+    "bio": "Armenian duduk player specializing in sacred and liturgical music from the Geghard Monastery tradition.",
+    "photo_url": "assets/artists/gohar_t.svg",
+    "links": ["a5"],
+    "piece_ids": ["p11"]
+  },
+  {
+    "id": "a7",
+    "name": "Hesen Z.",
+    "region": "Kurdistan",
+    "genre": "Traditional Folk",
+    "bio": "Kurdish tanbur master from Kermanshah province. Hesen's music draws from Yarsan spiritual traditions.",
+    "photo_url": "assets/artists/hesen_z.svg",
+    "links": [],
+    "piece_ids": ["p12"]
+  },
+  {
+    "id": "a8",
+    "name": "Jinan A.",
+    "region": "Syria",
+    "genre": "Contemporary Folk",
+    "bio": "Syrian-Kurdish vocalist who emerged from the Qamishli underground scene. Known for her powerful, emotive delivery.",
+    "photo_url": "assets/artists/jinan_a.svg",
+    "links": ["a4"],
+    "piece_ids": ["p13"]
+  },
+  {
+    "id": "a9",
+    "name": "Kamran P.",
+    "region": "Iran",
+    "genre": "Persian Classical",
+    "bio": "Kamran is a renowned kamancheh player and composer whose works bridge Persian classical music with contemporary composition.",
+    "photo_url": "assets/artists/kamran_p.svg",
+    "links": [],
+    "piece_ids": ["p14"]
+  },
+  {
+    "id": "a10",
+    "name": "Leyla Q.",
+    "region": "Turkey",
+    "genre": "Anatolian Folk",
+    "bio": "Leyla is a baglama virtuoso from Diyarbakir who has dedicated her career to documenting and performing Anatolian folk songs.",
+    "photo_url": "assets/artists/leyla_q.svg",
+    "links": ["a7"],
+    "piece_ids": ["p15"]
+  },
+  {
+    "id": "a11",
+    "name": "Miran K.",
+    "region": "Kurdistan",
+    "genre": "Classical Kurdish",
+    "bio": "Miran is a classically trained violinist from Erbil who adapts Kurdish folk melodies for string ensemble performances.",
+    "photo_url": "assets/artists/miran_k.svg",
+    "links": ["a1"],
+    "piece_ids": ["p16", "p17"]
+  },
+  {
+    "id": "a12",
+    "name": "Nergiz P.",
+    "region": "Kurdistan",
+    "genre": "Contemporary Folk",
+    "bio": "Nergiz is a singer-songwriter from Qamishli whose lyrics explore themes of exile, memory, and hope through a modern Kurdish folk lens.",
+    "photo_url": "assets/artists/nergiz_p.svg",
+    "links": ["a4"],
+    "piece_ids": ["p18", "p19"]
+  },
+  {
+    "id": "a13",
+    "name": "Osman T.",
+    "region": "Kurdistan",
+    "genre": "Traditional Folk",
+    "bio": "Osman is a dengbêj (traditional Kurdish storyteller and singer) from Mardin who has performed oral epics for over forty years.",
+    "photo_url": "assets/artists/osman_t.svg",
+    "links": [],
+    "piece_ids": ["p20"]
+  },
+  {
+    "id": "a14",
+    "name": "Parvin Sh.",
+    "region": "Iran",
+    "genre": "Persian Classical",
+    "bio": "Parvin is a master of the ney, specializing in the radif of Mirza Abdollah. Her interpretations are both meditative and technically brilliant.",
+    "photo_url": "assets/artists/parvin_sh.svg",
+    "links": ["a5"],
+    "piece_ids": ["p21"]
+  },
+  {
+    "id": "a15",
+    "name": "Qadir H.",
+    "region": "Kurdistan",
+    "genre": "Fusion / World",
+    "bio": "Qadir is a Kurdish composer and oud player who blends maqam traditions with ambient electronic soundscapes.",
+    "photo_url": "assets/artists/qadir_h.svg",
+    "links": ["a2"],
+    "piece_ids": ["p22"]
+  },
+  {
+    "id": "a16",
+    "name": "Rojin B.",
+    "region": "Kurdistan",
+    "genre": "Folk Rock",
+    "bio": "Rojin fronts a Kurdish folk-rock band from Amed, known for electric saz riffs and politically charged lyrics.",
+    "photo_url": "assets/artists/rojin_b.svg",
+    "links": ["a10"],
+    "piece_ids": ["p23"]
+  },
+  {
+    "id": "a17",
+    "name": "Soran M.",
+    "region": "Iraq",
+    "genre": "Classical Kurdish",
+    "bio": "Soran is a pianist and composer from Slemani who reimagines Kurdish classical pieces through Western classical forms.",
+    "photo_url": "assets/artists/soran_m.svg",
+    "links": ["a3"],
+    "piece_ids": ["p24"]
+  },
+  {
+    "id": "a18",
+    "name": "Tanya R.",
+    "region": "Syria",
+    "genre": "Contemporary Folk",
+    "bio": "Tanya is an Armenian-Kurdish vocalist from the Jazira region whose warm alto brings ancient hymns to new audiences.",
+    "photo_url": "assets/artists/tanya_r.svg",
+    "links": ["a6", "a8"],
+    "piece_ids": ["p25"]
+  },
+  {
+    "id": "a19",
+    "name": "Umid G.",
+    "region": "Turkey",
+    "genre": "Anatolian Folk",
+    "bio": "Umid is a zurna and mey player from Urfa who has performed at weddings and festivals throughout southeastern Turkey.",
+    "photo_url": "assets/artists/umid_g.svg",
+    "links": ["a10"],
+    "piece_ids": ["p16", "p20"]
+  },
+  {
+    "id": "a20",
+    "name": "Vesta S.",
+    "region": "Iran",
+    "genre": "Persian Classical",
+    "bio": "Vesta is a santoor prodigy from Isfahan whose polyphonic arrangements push the boundaries of Persian classical repertoire.",
+    "photo_url": "assets/artists/vesta_s.svg",
+    "links": ["a3"],
+    "piece_ids": ["p21", "p24"]
+  },
+  {
+    "id": "a21",
+    "name": "Welat D.",
+    "region": "Kurdistan",
+    "genre": "Dengbêj / Epic",
+    "bio": "Welat is a dengbêj master from the Serhat region who preserves the epic tradition of Kurdish oral history through song.",
+    "photo_url": "assets/artists/welat_d.svg",
+    "links": ["a7"],
+    "piece_ids": ["p22", "p17"]
+  },
+  {
+    "id": "a22",
+    "name": "Xelef T.",
+    "region": "Kurdistan",
+    "genre": "Yarsan Spiritual",
+    "bio": "Xelef is a tanbur player and Yarsan priest from the Guran region who transmits sacred spiritual repertoire.",
+    "photo_url": "assets/artists/xelef_t.svg",
+    "links": ["a7"],
+    "piece_ids": ["p12", "p18"]
+  },
+  {
+    "id": "a23",
+    "name": "Yazdan P.",
+    "region": "Iran",
+    "genre": "Fusion / World",
+    "bio": "Yazdan is a setar player and composer from Mashhad who integrates Persian classical music with minimal contemporary composition.",
+    "photo_url": "assets/artists/yazdan_p.svg",
+    "links": ["a9"],
+    "piece_ids": ["p23", "p25"]
+  },
+  {
+    "id": "a24",
+    "name": "Zahra K.",
+    "region": "Kurdistan",
+    "genre": "Traditional Folk",
+    "bio": "Zahra is a Kurdish vocalist from Kermanshah specialized in the repertoire of female Kurdish storytellers known as 'kilam'.",
+    "photo_url": "assets/artists/zahra_k.svg",
+    "links": [],
+    "piece_ids": ["p19", "p13"]
+  },
+  {
+    "id": "a25",
+    "name": "Arsham S.",
+    "region": "Iran",
+    "genre": "Persian Classical",
+    "bio": "Arsham is a kamancheh player and improviser from Tabriz whose work draws from both the Azerbaijani mugham and Persian radif traditions.",
+    "photo_url": "assets/artists/arsham_s.svg",
+    "links": ["a9"],
+    "piece_ids": ["p14", "p15"]
+  },
+  {
+    "id": "a26",
+    "name": "Hesen Zîrek",
+    "region": "Eastern Kurdistan (Iran)",
+    "genre": "Traditional Folk",
+    "bio": "Kurdish singer and composer (1921-1972), widely considered one of the greatest voices in Kurdish music history. Known for his emotional depth, vast repertoire, and enduring classics like 'Ey Reqîb' and 'Le Le Min Dilo.'",
+    "photo_url": "assets/artists/Hesen_Zirek.png",
+    "links": [],
+    "piece_ids": ["p26"]
+  },
+  {
+    "id": "a27",
+    "name": "Hozan Dîno",
+    "region": "Northern Kurdistan (Turkey)",
+    "genre": "Traditional Folk",
+    "bio": "Renowned Kurdish dengbêj (traditional storyteller and singer) from Turkey, celebrated for preserving and performing epic Kurdish oral traditions. His powerful, raw vocal style keeps centuries-old tales of love, loss, and resistance alive.",
+    "photo_url": "assets/artists/Hozan_Dino.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a28",
+    "name": "Hozan Serhad",
+    "region": "Northern Kurdistan (Turkey)",
+    "genre": "Traditional Folk",
+    "bio": "Hozan Serhad (Süleyman Alpdoğan) was a legendary Kurdish revolutionary musician and guerrilla fighter known for his powerful tembûr playing and his anthems of resistance. He dedicated his art to the Kurdish freedom struggle and was killed in 1999 at age 28, becoming an enduring symbol of Kurdish cultural rebellion.",
+    "photo_url": "assets/artists/Hozan_Serhad.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a29",
+    "name": "Keyhan Kelhor",
+    "region": "Eastern Kurdistan (Iran)",
+    "genre": "Traditional Folk",
+    "bio": "Exceptional Kurdish kamancheh (spiked fiddle) virtuoso from Iran (born 1963), known for his deeply expressive playing and technical mastery. He has won multiple international awards and brought Kurdish classical music to global audiences.",
+    "photo_url": "assets/artists/Keyhan_Kelhor.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a30",
+    "name": "Leyla Ferîqî",
+    "region": "Eastern Kurdistan (Iran)",
+    "genre": "Traditional Folk",
+    "bio": "Prominent Kurdish female singer and political activist from Iranian Kurdistan (born 1972). Her voice became a symbol of Kurdish resistance, and she faced imprisonment and persecution for using music to challenge oppression.",
+    "photo_url": "assets/artists/Leyla_Feriqi.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a31",
+    "name": "Merziye Ferîqî",
+    "region": "Eastern Kurdistan (Iran)",
+    "genre": "Traditional Folk",
+    "bio": "Kurdish singer known for her emotional ballads and strong ties to the Kurdish freedom movement. Her songs express the pain of displacement, political struggle, and hope for justice.",
+    "photo_url": "assets/artists/Merziye_Feriqi.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a32",
+    "name": "Mucteba Mîrzade",
+    "region": "Eastern Kurdistan (Iran)",
+    "genre": "Traditional Folk",
+    "bio": "Mucteba Mîrzade (Mojtaba Mirzadeh in Persian) was an Iranian - Kurdish violin, kamancheh, and setar master who was influential in Persian classical music, classical and folk Kurdish music, and also in Iranian pop music.",
+    "photo_url": "assets/artists/Mucteba_Mirzade.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a33",
+    "name": "Nasir Rezazî",
+    "region": "Eastern Kurdistan (Iran)",
+    "genre": "Traditional Folk",
+    "bio": "Prominent Kurdish classical vocalist from Iran, recognized for his flawless technique and deep interpretations of Kurdish and Persian classical repertoires. He has performed internationally, elevating Kurdish maqam singing.",
+    "photo_url": "assets/artists/Nasir_Rezazi.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a34",
+    "name": "Şivan Perwer",
+    "region": "Northern Kurdistan (Turkey)",
+    "genre": "Traditional Folk",
+    "bio": "Legendary Kurdish dengbêj, tembûr player, and political activist (born 1955), often called the voice of Kurdish national identity. With hundreds of songs and decades of exile, he remains an iconic figure in Kurdish music and resistance.",
+    "photo_url": "assets/artists/Sivan_Perwer.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a35",
+    "name": "Delîla",
+    "region": "Northern Kurdistan (Turkey)",
+    "genre": "Traditional Folk",
+    "bio": "Delila, born Şenay Gücer in 1981 in Amed, was a Kurdish singer, drummer, and partisan fighter for the freedom of Kurdistan. She was killed by soldiers of the Turkish army on August 25, 2008, in the region of Dêrahînê.",
+    "photo_url": "assets/artists/Delila.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a36",
+    "name": "Ednan Kerîm",
+    "region": "Southern Kurdistan (Iraq's Kurdistan Region)",
+    "genre": "Traditional Folk",
+    "bio": "...",
+    "photo_url": "assets/artists/Ednan_Kerim.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a37",
+    "name": "Eyub Elî",
+    "region": "Southern Kurdistan (Iraq's Kurdistan Region)",
+    "genre": "Traditional Folk",
+    "bio": "...",
+    "photo_url": "assets/artists/Eyub_Eli.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a38",
+    "name": "Muhemmed Mamlê",
+    "region": "Eastern Kurdistan (Iran)",
+    "genre": "Traditional Folk",
+    "bio": "...",
+    "photo_url": "assets/artists/Muhemmed_Mamle.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a39",
+    "name": "Necmedîn_Xulamî",
+    "region": "Eastern Kurdistan (Iran)",
+    "genre": "Traditional Folk",
+    "bio": "...",
+    "photo_url": "assets/artists/Necmedin_Xulami.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a40",
+    "name": "Rojda Şenses",
+    "region": "Northern Kurdistan (Turkey)",
+    "genre": "Traditional Folk",
+    "bio": "...",
+    "photo_url": "assets/artists/Rojda_Senses.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a41",
+    "name": "Tahir Tofîq",
+    "region": "Southern Kurdistan (Iraq's Kurdistan Region)",
+    "genre": "Traditional Folk",
+    "bio": "...",
+    "photo_url": "assets/artists/Tahir_Tofiq.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a42",
+    "name": "Tehsîn Taha",
+    "region": "Southern Kurdistan (Iraq's Kurdistan Region)",
+    "genre": "Traditional Folk",
+    "bio": "...",
+    "photo_url": "assets/artists/Tehsin_Taha.png",
+    "links": [],
+    "piece_ids": []
+  },
+  {
+    "id": "a43",
+    "name": "Xecê Herdem",
+    "region": "Southern Kurdistan (Iraq's Kurdistan Region)",
+    "genre": "Traditional Folk",
+    "bio": "...",
+    "photo_url": "assets/artists/Xece_Herdem.png",
+    "links": [],
+    "piece_ids": []
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]

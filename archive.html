@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awazxane - Archive</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-archive">
+
+
+    <header id="main-header">
+        <!-- Left: Logo -->
+        <div class="header-left">
+            <h1><a href="./index.html">AWAZXANE</a></h1>
+        </div>
+
+        <!-- Center: Navigation -->
+        <nav class="main-nav">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./archive.html" class="nav-link" id="active-page-nav">Archive</a>
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Right: Social Icons -->
+        <div class="header-right">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">📺</a>
+            <a href="#" class="social-link" aria-label="X (Twitter)">𝕏</a>
+            <a href="#" class="social-link" aria-label="GitHub">🐙</a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="grid" id="artists-grid">
+            <!-- JavaScript will fill this area with artist cards -->
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script>
+        // This script runs when the page loads
+        async function loadArtists() {
+            try {
+                // 1. Fetch the artists data
+                const response = await fetch('data/artists.json');
+                
+                // 2. Convert the response to JavaScript array
+                const artists = await response.json();
+
+                // 3. Get the container where we will put the cards
+                const grid = document.getElementById('artists-grid');
+                grid.innerHTML = ''; // Clear any previous content
+
+                // 4. Loop through every artist and create a card
+                artists.forEach(artist => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+
+                    // Build the HTML content of the card
+                    card.innerHTML = `
+                        <img src="${artist.photo_url}" 
+                             alt="${artist.name}"
+                             onerror="this.src='https://via.placeholder.com/300x220?text=${encodeURIComponent(artist.name)}'">
+                        <h3>${artist.name}</h3>
+                    `;
+
+                    // When user clicks the card → go to individual artist page
+                    card.addEventListener('click', () => {
+                        window.location.href = `artist.html?id=${artist.id}`;
+                    });
+
+                    // Add the finished card to the grid
+                    grid.appendChild(card);
+                });
+
+            } catch (error) {
+                console.error("Failed to load artists:", error);
+                document.getElementById('artists-grid').innerHTML = 
+                    '<p style="text-align:center; grid-column:1/-1;">Sorry, could not load artists.</p>';
+            }
+        }
+
+        // Run the function when the page finishes loading
+        loadArtists();
+    </script>
+
+
+
+    <footer>
+        <p>&copy; 2026 Pêdram Feyzî — Awazxane &middot; Kurdish sheet music archive</p>
+    </footer>
+
+    <script>
+        // Simple JavaScript for header scroll effect
+        const header = document.getElementById('main-header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {  // Change after scrolling 100px
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>

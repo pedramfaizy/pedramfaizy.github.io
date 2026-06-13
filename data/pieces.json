@@ -1,0 +1,236 @@
+[
+  {
+    "id": "p1",
+    "title": "Dilan",
+    "alt_titles": ["Dilanê"],
+    "origin": { "region": "Kurdistan", "tradition": "folk", "type": "traditional" },
+    "performer_ids": ["a1"],
+    "notation_ids": ["n1"],
+    "image": "assets/pieces/dilan.svg"
+  },
+  {
+    "id": "p2",
+    "title": "Zarokê Kurdî",
+    "alt_titles": [],
+    "origin": { "region": "Kurdistan", "tradition": "folk", "type": "traditional" },
+    "performer_ids": ["a2"],
+    "notation_ids": ["n2"],
+    "image": "assets/pieces/zaroke_kurdi.svg"
+  },
+  {
+    "id": "p3",
+    "title": "Gule Gule",
+    "alt_titles": ["Gulê Gulê"],
+    "origin": { "region": "Kurdistan", "tradition": "folk", "type": "traditional" },
+    "performer_ids": ["a2"],
+    "notation_ids": ["n3"],
+    "image": "assets/pieces/gule_gule.svg"
+  },
+  {
+    "id": "p4",
+    "title": "Şewitîna Dil",
+    "alt_titles": ["Burning Heart"],
+    "origin": { "region": "Kurdistan", "tradition": "folk", "type": "love song" },
+    "performer_ids": ["a1"],
+    "notation_ids": ["n4"],
+    "image": "assets/pieces/sewitina_dil.svg"
+  },
+  {
+    "id": "p5",
+    "title": "Rêwîtiya Şevê",
+    "alt_titles": ["Night Journey"],
+    "origin": { "region": "Kurdistan", "tradition": "folk", "type": "instrumental" },
+    "performer_ids": ["a2"],
+    "notation_ids": ["n5"],
+    "image": "assets/pieces/rewitiya_seve.svg"
+  },
+  {
+    "id": "p6",
+    "title": "Payîz",
+    "alt_titles": ["Autumn"],
+    "origin": { "region": "Kurdistan", "tradition": "classical", "type": "solo santoor" },
+    "performer_ids": ["a3"],
+    "notation_ids": ["n6"],
+    "image": "assets/pieces/payiz.svg"
+  },
+  {
+    "id": "p7",
+    "title": "Şaxên Berfî",
+    "alt_titles": ["Snowy Branches"],
+    "origin": { "region": "Kurdistan", "tradition": "classical", "type": "solo santoor" },
+    "performer_ids": ["a3"],
+    "notation_ids": ["n7"],
+    "image": "assets/pieces/saxen_berfi.svg"
+  },
+  {
+    "id": "p8",
+    "title": "Aşitî",
+    "alt_titles": ["Peace"],
+    "origin": { "region": "Kurdistan", "tradition": "fusion", "type": "world music" },
+    "performer_ids": ["a4"],
+    "notation_ids": ["n8"],
+    "image": "assets/pieces/asiti.svg"
+  },
+  {
+    "id": "p9",
+    "title": "Daryâ-ye 'Eshq",
+    "alt_titles": ["Sea of Love"],
+    "origin": { "region": "Iran", "tradition": "Persian classical", "type": "âvâz" },
+    "performer_ids": ["a5"],
+    "notation_ids": ["n9"],
+    "image": "assets/pieces/daryaye_eshq.svg"
+  },
+  {
+    "id": "p10",
+    "title": "Chahârgâh",
+    "alt_titles": [],
+    "origin": { "region": "Iran", "tradition": "Persian classical", "type": "radif" },
+    "performer_ids": ["a5"],
+    "notation_ids": ["n10"],
+    "image": "assets/pieces/chahargah.svg"
+  },
+  {
+    "id": "p11",
+    "title": "Mer Hayrenik",
+    "alt_titles": ["Our Fatherland"],
+    "origin": { "region": "Armenia", "tradition": "sacred", "type": "liturgical" },
+    "performer_ids": ["a6"],
+    "notation_ids": ["n11"],
+    "image": "assets/pieces/mer_hayrenik.svg"
+  },
+  {
+    "id": "p12",
+    "title": "Heyran",
+    "alt_titles": ["Beloved"],
+    "origin": { "region": "Kurdistan", "tradition": "Yarsan spiritual", "type": "tanbur" },
+    "performer_ids": ["a7", "a22"],
+    "notation_ids": ["n12"],
+    "image": "assets/pieces/heyran.svg"
+  },
+  {
+    "id": "p13",
+    "title": "Bê Kes",
+    "alt_titles": ["Alone", "Without Anyone"],
+    "origin": { "region": "Syria", "tradition": "contemporary folk", "type": "vocal" },
+    "performer_ids": ["a8", "a24"],
+    "notation_ids": ["n13"],
+    "image": "assets/pieces/be_kes.svg"
+  },
+  {
+    "id": "p14",
+    "title": "Nava-ye Sobh",
+    "alt_titles": ["Morning Melody"],
+    "origin": { "region": "Iran", "tradition": "Persian classical", "type": "kamancheh solo" },
+    "performer_ids": ["a9", "a25"],
+    "notation_ids": ["n14"],
+    "image": "assets/pieces/navaye_sobh.svg"
+  },
+  {
+    "id": "p15",
+    "title": "Gölge",
+    "alt_titles": ["Shadow"],
+    "origin": { "region": "Turkey", "tradition": "Anatolian folk", "type": "baglama instrumental" },
+    "performer_ids": ["a10", "a25"],
+    "notation_ids": ["n15"],
+    "image": "assets/pieces/golge.svg"
+  },
+  {
+    "id": "p16",
+    "title": "Sarab",
+    "alt_titles": ["Mirages", "Sarabî"],
+    "origin": { "region": "Kurdistan", "tradition": "folk", "type": "string ensemble" },
+    "performer_ids": ["a11", "a19"],
+    "notation_ids": ["n16"],
+    "image": "assets/pieces/sarab.svg"
+  },
+  {
+    "id": "p17",
+    "title": "Lawik",
+    "alt_titles": ["Lullaby", "Laurik"],
+    "origin": { "region": "Kurdistan", "tradition": "folk", "type": "vocal lullaby" },
+    "performer_ids": ["a11", "a21"],
+    "notation_ids": ["n17"],
+    "image": "assets/pieces/lawik.svg"
+  },
+  {
+    "id": "p18",
+    "title": "Dilsar",
+    "alt_titles": ["Heartwarming"],
+    "origin": { "region": "Kurdistan", "tradition": "contemporary folk", "type": "ballad" },
+    "performer_ids": ["a12", "a22"],
+    "notation_ids": ["n18"],
+    "image": "assets/pieces/dilsar.svg"
+  },
+  {
+    "id": "p19",
+    "title": "Beyanî",
+    "alt_titles": ["Bayani"],
+    "origin": { "region": "Kurdistan", "tradition": "folk", "type": "kilam" },
+    "performer_ids": ["a12", "a24"],
+    "notation_ids": ["n19"],
+    "image": "assets/pieces/beyani.svg"
+  },
+  {
+    "id": "p20",
+    "title": "Helbest",
+    "alt_titles": ["Poem"],
+    "origin": { "region": "Kurdistan", "tradition": "traditional", "type": "dengbêj epic" },
+    "performer_ids": ["a13", "a19"],
+    "notation_ids": ["n20"],
+    "image": "assets/pieces/helbest.svg"
+  },
+  {
+    "id": "p21",
+    "title": "Govend",
+    "alt_titles": ["Dance"],
+    "origin": { "region": "Iran", "tradition": "Persian classical", "type": "ney solo" },
+    "performer_ids": ["a14", "a20"],
+    "notation_ids": ["n21"],
+    "image": "assets/pieces/govend.svg"
+  },
+  {
+    "id": "p22",
+    "title": "Zozan",
+    "alt_titles": ["Highlands"],
+    "origin": { "region": "Kurdistan", "tradition": "fusion", "type": "oud & ambient" },
+    "performer_ids": ["a15", "a21"],
+    "notation_ids": ["n22"],
+    "image": "assets/pieces/zozan.svg"
+  },
+  {
+    "id": "p23",
+    "title": "Pelin",
+    "alt_titles": ["Traces"],
+    "origin": { "region": "Kurdistan", "tradition": "folk rock", "type": "electric saz" },
+    "performer_ids": ["a16", "a23"],
+    "notation_ids": ["n23"],
+    "image": "assets/pieces/pelin.svg"
+  },
+  {
+    "id": "p24",
+    "title": "Sitar",
+    "alt_titles": ["Star"],
+    "origin": { "region": "Iraq", "tradition": "classical Kurdish", "type": "piano miniature" },
+    "performer_ids": ["a17", "a20"],
+    "notation_ids": ["n24"],
+    "image": "assets/pieces/sitar.svg"
+  },
+  {
+    "id": "p25",
+    "title": "Boran",
+    "alt_titles": ["Storm"],
+    "origin": { "region": "Syria", "tradition": "contemporary folk", "type": "vocal duet" },
+    "performer_ids": ["a18", "a23"],
+    "notation_ids": ["n25"],
+    "image": "assets/pieces/boran.svg"
+  },
+  {
+    "id": "p26",
+    "title": "Nûrî Ruxsarit",
+    "alt_titles": [],
+    "origin": { "region": "Eastern Kurdistan (Iran)", "tradition": "classical Kurdish", "type": "traditional" },
+    "performer_ids": ["a26"],
+    "notation_ids": ["n16"],
+    "image": "assets/pieces/Nuri Ruxsarit - thumbnail.png"
+  }
+]

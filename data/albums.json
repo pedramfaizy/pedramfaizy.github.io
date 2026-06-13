@@ -1,0 +1,82 @@
+[
+  {
+    "id": "al1",
+    "title": "Voices of the Zagros",
+    "artist_id": "a1",
+    "year": 2024,
+    "cover_url": "assets/albums/voices_zagros.svg",
+    "track_ids": ["t1", "t2"]
+  },
+  {
+    "id": "al2",
+    "title": "Rêwîtiya Şevê",
+    "artist_id": "a2",
+    "year": 2025,
+    "cover_url": "assets/albums/rewitiya_seve.svg",
+    "track_ids": ["t3", "t4", "t5"]
+  },
+  {
+    "id": "al3",
+    "title": "Payîz: Solo Santoor",
+    "artist_id": "a3",
+    "year": 2025,
+    "cover_url": "assets/albums/payiz_santoor.svg",
+    "track_ids": ["t6", "t7"]
+  },
+  {
+    "id": "al4",
+    "title": "Aşitî / Fusion",
+    "artist_id": "a4",
+    "year": 2026,
+    "cover_url": "assets/albums/asiti.svg",
+    "track_ids": ["t8"]
+  },
+  {
+    "id": "al5",
+    "title": "Masterworks of the Tar",
+    "artist_id": "a5",
+    "year": 2023,
+    "cover_url": "assets/albums/masterworks_tar.svg",
+    "track_ids": ["t9", "t10"]
+  },
+  {
+    "id": "al6",
+    "title": "Sacred Duduk",
+    "artist_id": "a6",
+    "year": 2024,
+    "cover_url": "assets/albums/sacred_duduk.svg",
+    "track_ids": ["t11"]
+  },
+  {
+    "id": "al7",
+    "title": "Heyran: Tanbur Sessions",
+    "artist_id": "a7",
+    "year": 2025,
+    "cover_url": "assets/albums/heyran_tanbur.svg",
+    "track_ids": ["t12"]
+  },
+  {
+    "id": "al8",
+    "title": "Bê Kes",
+    "artist_id": "a8",
+    "year": 2026,
+    "cover_url": "assets/albums/be_kes.svg",
+    "track_ids": ["t13"]
+  },
+  {
+    "id": "al9",
+    "title": "Nava-ye Sobh",
+    "artist_id": "a9",
+    "year": 2025,
+    "cover_url": "assets/albums/navaye_sobh.svg",
+    "track_ids": ["t14"]
+  },
+  {
+    "id": "al10",
+    "title": "Gölge / Shadow",
+    "artist_id": "a10",
+    "year": 2026,
+    "cover_url": "assets/albums/golge.svg",
+    "track_ids": ["t15"]
+  }
+]
