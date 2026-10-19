@@ -1,0 +1,256 @@
+/* ============================================
+   Reusable Presentation System
+   Light theme • Clean Inter font
+   ============================================ */
+
+:root {
+  --bg: #fbf9f8;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-muted: #5c6570;
+  --accent: #2563eb;
+  --accent-soft: #dbeafe;
+  --border: #e5e7eb;
+  --shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.08);
+  --radius: 16px;
+  --font: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Progress bar ---------- */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent);
+  width: 0%;
+  z-index: 100;
+  transition: width 0.35s ease;
+}
+
+/* ---------- Core slide system ---------- */
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  padding: 4rem 2rem;
+}
+
+.slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.slide-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.slide-inner.center {
+  text-align: center;
+}
+
+/* ---------- Typography helpers ---------- */
+.eyebrow {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.body {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  max-width: 640px;
+}
+
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+/* ---------- Lists ---------- */
+.clean-list {
+  list-style: none;
+  margin-top: 1.5rem;
+}
+
+.clean-list li {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 0.9rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.clean-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.clean-list.compact li {
+  font-size: 1.05rem;
+  margin-bottom: 0.6rem;
+}
+
+/* ---------- Two column layout ---------- */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+/* ---------- Auto horizontal carousel ---------- */
+.carousel {
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.carousel-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  min-height: 340px;
+}
+
+.project-image {
+  background-size: cover;
+  background-position: center;
+  background-color: #e5e7eb; /* fallback while loading */
+}
+
+.project-info {
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-info h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.project-info p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+/* Dots */
+.carousel-dots {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 5;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.25s, transform 0.25s;
+}
+
+.dot.active {
+  background: var(--accent);
+  transform: scale(1.25);
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 800px) {
+  .project-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .project-image {
+    height: 200px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .slide {
+    padding: 2.5rem 1.25rem;
+  }
+}
+
+/* ---------- Utility: add more slides easily ----------
+   Just copy a <section class="slide">...</section>
+   and the navigation + progress bar will pick it up automatically.
+*/
