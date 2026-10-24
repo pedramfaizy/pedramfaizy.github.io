@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Projects</title>
+</head>
+<body>
+
+  <h1>Projects</h1>
+
+  <div class="tree">
+
+
+    <div class="directory">
+      <div class="label">
+        <span class="icon">📁</span>
+        Presentation-OSP
+      </div>
+      <div class="children">
+        
+        <a class="file" href="./Presentation-OSP/presentation.html">
+          <span class="icon">📊</span>
+          presentation.html
+        </a>
+        <a class="file" href="./Presentation-OSP/Presentation - Open Source Projects and their Effect on Software Development.pdf">
+          <span class="icon">📄</span>
+          Presentation - Open Source Projects and their Effect on Software Development.pdf
+        </a>
+        <a class="file" href="./Presentation-OSP/Presentation - Open Source Projects and their Effect on Software Development.md">
+          <span class="icon">📄</span>
+          Presentation - Open Source Projects and their Effect on Software Development.md
+        </a>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <script>
+    // Toggle folders open/closed on click
+    document.querySelectorAll('.directory > .label').forEach(label => {
+      label.addEventListener('click', () => {
+        label.parentElement.classList.toggle('open');
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+    background: #0f1117;
+    color: #e2e4e9;
+    min-height: 100vh;
+    padding: 2.5rem 1.5rem;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #f0f2f5;
+    letter-spacing: -0.02em;
+}
+
+/* ── Tree container ── */
+.tree {
+    max-width: 520px;
+}
+
+/* ── Shared item base ── */
+.directory,
+.file {
+    border-radius: 10px;
+    border: 1px solid #2a2e38;
+    background: #161920;
+    transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+
+.directory:hover,
+.file:hover {
+    border-color: #3d4452;
+    background: #1c2029;
+}
+
+/* ── Directory ── */
+.directory {
+    margin: 0.35rem 0;
+    overflow: hidden;
+}
+
+.directory > .label {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.55rem 0.85rem;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+}
+
+.directory > .label::before {
+    content: "▶";
+    font-size: 0.65rem;
+    color: #7a8499;
+    transition: transform 0.2s ease;
+    width: 0.9em;
+    display: inline-block;
+}
+
+.directory.open > .label::before {
+    transform: rotate(90deg);
+}
+
+.directory > .label .icon {
+    font-size: 1.05rem;
+}
+
+/* Nested children container */
+.directory > .children {
+    display: none;
+    padding: 0 0.6rem 0.55rem 1.1rem;
+    border-top: 1px solid #2a2e38;
+}
+
+.directory.open > .children {
+    display: block;
+}
+
+/* ── File (link) ── */
+a.file {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.5rem 0.85rem;
+    margin: 0.3rem 0;
+    text-decoration: none;
+    color: #c8cdd8;
+    font-weight: 400;
+}
+
+a.file:hover {
+    color: #fff;
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 1px rgba(74, 144, 226, 0.25);
+}
+
+a.file .icon {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Nested indentation handled by the .children padding */
